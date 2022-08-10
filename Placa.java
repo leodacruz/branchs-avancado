@@ -29,7 +29,7 @@ public class Placa{
         if (codigo.equals("AAA0A00")){
             return("Invalida!");
         }else{
-            return(codigo+":"+pais);
+            return("e "+ codigo+":"+pais+" e");
         }
     }
 }
