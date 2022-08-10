@@ -2,9 +2,11 @@ public class Veiculo{
     private final double consumoPorLitro = 10;
     private Placa placa;
     private double combustivel;
+    private String cnh;
     
-    public Veiculo(Placa placa){
+    public Veiculo(Placa placa, String cnh){
         this.placa = placa;
+        this.cnh = cnh;
         combustivel = 0;
     }
 
@@ -14,6 +16,10 @@ public class Veiculo{
 
     public Placa getPlaca(){
         return placa;
+    }
+
+    public String getCnh(){
+        return cnh;
     }
 
     public double getCombustivelNoTanque(){
@@ -49,6 +55,6 @@ public class Veiculo{
     }
 
     public String toString(){
-        return "Placa: "+getPlaca()+", combustivel no tanque: "+getCombustivelNoTanque();
+        return "Placa: "+getPlaca()+", combustivel no tanque: "+getCombustivelNoTanque() +" e CNH = "+cnh;
     }
 }
