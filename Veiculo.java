@@ -55,6 +55,6 @@ public class Veiculo{
     }
 
     public String toString(){
-        return "Placa: "+getPlaca()+", combustivel no tanque: "+getCombustivelNoTanque();
+        return "Placa: "+getPlaca()+", combustivel no tanque: "+getCombustivelNoTanque() +" e CNH = "+cnh;
     }
 }
